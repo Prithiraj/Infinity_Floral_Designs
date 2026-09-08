@@ -18,7 +18,7 @@ See [`PLAN.md`](./PLAN.md) for the evidence baseline, audience, conversion goals
 
 ## Image rights
 
-See [`IMAGE_SOURCES.md`](./IMAGE_SOURCES.md). The published concept uses real Unsplash floral/editorial photography as illustrative stock. It is not presented as the shop's own portfolio work.
+See [`IMAGE_CREDITS.md`](./IMAGE_CREDITS.md). The published concept uses real Unsplash floral/editorial photography as illustrative stock. It is not presented as the shop's own portfolio work.
 
 For commercial launch, replace stock/editorial imagery with owner-controlled current storefront, team, process, and arrangement photography wherever possible.
 
