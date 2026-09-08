@@ -1,58 +1,52 @@
 # Infinity Floral Designs
 
-A mobile-first, editorial redesign concept for the historical **Infinity Floral Designs** florist listing in Boynton Beach, Florida.
+A mobile-first floral website concept for Infinity Floral Designs, combining warm editorial art direction with clear local-shop conversion patterns.
 
-## Live preview
+## Important prototype status
 
-Expected GitHub Pages URL:
+Public research found a historical Boynton Beach listing, but the current address, phone, hours, ordering channel, services, delivery area, pricing, reviews, and operating entity were not sufficiently verified. This implementation intentionally **does not invent or republish stale business details as current facts**.
 
-https://prithiraj.github.io/Infinity_Floral_Designs/
+The visual build is therefore a relaunch-ready prototype. Three user-supplied concept screenshots inform the visual hierarchy and responsive patterns only; their invented sample content is not reused. Once the owner supplies verified business data, the conversion scaffolding can be connected without redesigning the site.
 
-## Design approach
+## Design plan
 
-The implementation blends the strongest ideas from the three supplied reference screenshots:
+See [`DESIGN_PLAN.md`](./DESIGN_PLAN.md) for the evidence baseline, audience, conversion goals, creative direction, color and typography systems, image strategy, accessibility, performance, SEO, rights notes, implementation sequence, and acceptance criteria.
 
-- local-first clarity, a compact information strip, and obvious mobile actions;
-- e-commerce-like mood browsing and a four-card floral inspiration shelf without fake products/prices;
-- editorial serif typography, warm paper-like surfaces, and premium image-led storytelling;
-- deep green / claret / blush palette;
-- responsive mobile navigation and a compact mobile action dock;
-- restrained animation with a decorative, optional Three.js hero layer.
+## Image rights
 
-The screenshots are **visual references only**. Their sample phone numbers, addresses, hours, prices, delivery promises, product names, reviews, services, and policies are not treated as facts for Infinity Floral Designs.
+See [`IMAGE_CREDITS.md`](./IMAGE_CREDITS.md). The live prototype uses real, free-to-use Unsplash floral photography as illustrative stock. It is not presented as the shop's own portfolio work.
 
-The site is intentionally static: semantic HTML, CSS, and vanilla JavaScript. Three.js is dynamically imported only on larger screens when reduced motion and data-saving modes are not active.
+## Tech
 
-## Important business-data note
+- Semantic static HTML
+- Responsive CSS
+- Vanilla JavaScript
+- Native `<dialog>` lightbox
+- Client-side inquiry draft builder (no data transmission)
+- Three.js loaded dynamically as a progressive, non-interactive petal enhancement
+- `prefers-reduced-motion` support
+- GitHub Pages deployment workflow
 
-Research indicates the supplied Boynton Beach Maps listing is historical. The former address appears to be occupied by another business, and the historical phone number is currently associated with a different florist. This preview therefore does **not** present the old phone, hours, prices, ordering policies, or current reviews as active business facts.
-
-Read [`PLAN.md`](./PLAN.md) for the evidence baseline, conversion strategy, design system, accessibility rules, SEO plan, and commercial-launch checklist.
-
-## Photography
-
-The preview uses real photographs sourced from pages marked free under the Unsplash License. They are not photographs of Infinity Floral Designs. See [`IMAGE_SOURCES.md`](./IMAGE_SOURCES.md) for source links and rights notes.
-
-For a commercial launch, replace lifestyle/stock photography with owner-controlled current storefront, team, process, and arrangement photography whenever possible.
-
-## Local development
-
-No build step is required.
+## Local preview
 
 ```bash
-python -m http.server 8080
+python -m http.server 8000
 ```
 
-Then open `http://localhost:8080`.
+Then open `http://localhost:8000`.
 
-## GitHub Pages
+## Production data required
 
-The project is designed to publish directly from a `gh-pages` branch. A `.nojekyll` file is included so GitHub serves the static files as-is.
+Before presenting the site as a current operating florist, verify and add:
 
-## Files
-
-- `index.html` — semantic page structure, metadata, JSON-LD
-- `styles.css` — responsive visual system and reduced-motion behavior
-- `script.js` — navigation, reveal enhancement, optional Three.js petals
-- `PLAN.md` — approved plan and evidence guardrails
-- `IMAGE_SOURCES.md` — image licensing/source log
+- legal/current business identity;
+- current street address;
+- current phone;
+- current email/domain;
+- current hours;
+- current services and ordering method;
+- pickup/delivery/service area;
+- prices or product inventory, if used;
+- current social profiles;
+- verified reviews/social proof;
+- owner-controlled logo and photography rights.
